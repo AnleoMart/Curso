@@ -1,0 +1,27 @@
+<div>
+  <form class="row g-3">
+    <div class="col-md-6 mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type class="form-control" placeholder = "Ingresa tu nombre" name="name" #nombre>
+    </div>
+    <div class="col-md-6">
+      <label for="edad" class="form-label">Edad</label>
+      <input type ="number" class="form-control" placeholder="Ingresa tu edad"name="edad" #edad>
+    </div>
+    <div class="col-md-6">
+      <label for="direccion" class="form-label">Direccion</label>
+      <input type="text" class="form-control" name="direccion" placeholder="Cra 72 Bis #152b-25" #direccion>
+    </div>
+    <div class="col-md-4">
+      <label for="cursos">Cursos</label>
+      <select id="cursos"class="form-select" name="cursos" #eleccion>
+        <option selected>Seleccionar...</option>
+        <option [value]="item" *ngFor="let item of listCursos">{{item}}</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <button type="button" class="btn btn-info"(click)="getInscribir(nombre.value, edad.value, eleccion.value)">Inscribir</button>
+    </div>
+  </form><br>
+  <strong>{{respuesta}}</strong>
+</div>
