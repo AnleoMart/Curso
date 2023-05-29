@@ -1,37 +1,34 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tinez</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll"></div>
-    <div class ="mb-3 row">
-      <ul class=" center navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
-        <li class="nav-item dropdown ">
-          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Principal
-          </a>
-          <a href="#" role="button" data-bs-toggle="dropdown">
-            Cursos
-          </a>
-          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Precios
-          </a>
-          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Registro
-          </a>
-          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Contacto
-          </a>
-        </li>
-      </ul>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="logo tienda" />
     </div>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <div class="menu">
+      <nav>
+        <ul class="item">
+          <li><a >Principal</a></li>
+          <li><a routerLink="/cursos">Cursos</a></li>
+          <li><a >Precios</a></li>
+          <li><a routerLink="/profesores">Profesores</a></li>
+          <li><a >Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-</nav>
+    <div class="buscador">
+      <li>
+        <form action="">
+          <input
+            type="text"
+            class="buscarOculto"
+            name="buscar"
+            id="input_buscar"
+            placeholder="ingresa que quieres buscar"
+          />
+          <a id="buscando">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </form>
+      </li>
+    </div>
+  </div>
+</header>

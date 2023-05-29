@@ -10,7 +10,7 @@ export class Curso{
     return this.curso;
   }
 
-  inscribir(nombre:string, edad:string, curso:string){
-    this.respuesta=`se ha inscrito al curso: ${curso}, Estudiante: ${nombre} edad: ${edad}`
+  inscribir(nombre:string, edad:string, curso:string): void{
+    this.respuesta=`Se ha inscrito al curso: ${curso} Satisfactoriamente, El estudiante: ${nombre}, edad: ${edad}`
   }
 }

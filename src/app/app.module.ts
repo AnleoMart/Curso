@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { ProfesorComponent } from './profesor/profesor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    FormularioComponent
+    FormularioComponent,
+    ProfesorComponent
   ],
   imports: [
     BrowserModule,
